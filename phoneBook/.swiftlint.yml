@@ -1,0 +1,9 @@
+disabled_rules:
+- line_length
+- trailing_whitespace
+- orphaned_doc_comment
+- nesting
+included:
+excluded:
+- phoneBook/Resource/AppDelegate.swift
+- honeBook/Resource/SceneDelegate.swift
