@@ -16,6 +16,12 @@
 		AA7E09E126F8E88700106DC2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA7E09E026F8E88700106DC2 /* SnapKit */; };
 		AA7E09EE26F8EF9900106DC2 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = AA7E09ED26F8EF9900106DC2 /* Then */; };
 		AA7E09F026F8F0FA00106DC2 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AA7E09EF26F8F0FA00106DC2 /* .swiftlint.yml */; };
+		AA7E09F326F9031600106DC2 /* UIView+addSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E09F226F9031600106DC2 /* UIView+addSubViews.swift */; };
+		AA7E09F826F90DA000106DC2 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E09F726F90DA000106DC2 /* People.swift */; };
+		AA7E09FA26F90E4500106DC2 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E09F926F90E4500106DC2 /* PeopleViewModel.swift */; };
+		AA7E09FF26F9125900106DC2 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E09FE26F9125900106DC2 /* UITableView+Reusable.swift */; };
+		AA7E0A0326F92AAB00106DC2 /* String+ExtractFirstIndexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E0A0226F92AAB00106DC2 /* String+ExtractFirstIndexString.swift */; };
+		AA7E0A0526F9352600106DC2 /* MyCardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E0A0426F9352600106DC2 /* MyCardHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		AA7E09D726F8E50B00106DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA7E09D926F8E50B00106DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = phoneBook/Resource/Info.plist; sourceTree = SOURCE_ROOT; };
 		AA7E09EF26F8F0FA00106DC2 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		AA7E09F226F9031600106DC2 /* UIView+addSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addSubViews.swift"; sourceTree = "<group>"; };
+		AA7E09F726F90DA000106DC2 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		AA7E09F926F90E4500106DC2 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		AA7E09FE26F9125900106DC2 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		AA7E0A0226F92AAB00106DC2 /* String+ExtractFirstIndexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtractFirstIndexString.swift"; sourceTree = "<group>"; };
+		AA7E0A0426F9352600106DC2 /* MyCardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +85,11 @@
 		AA7E09E526F8E90400106DC2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				AA7E09EA26F8ECBA00106DC2 /* Commponent */,
+				AA7E09FB26F910F600106DC2 /* Cells */,
+				AA7E09F526F90D4700106DC2 /* ViewModel */,
+				AA7E09F426F90D4400106DC2 /* Model */,
+				AA7E09F126F8FA8E00106DC2 /* Extensions */,
+				AA7E09EA26F8ECBA00106DC2 /* Component */,
 				AA7E09E726F8EA1600106DC2 /* ViewControllers */,
 			);
 			path = Source;
@@ -99,11 +115,45 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		AA7E09EA26F8ECBA00106DC2 /* Commponent */ = {
+		AA7E09EA26F8ECBA00106DC2 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				AA7E0A0426F9352600106DC2 /* MyCardHeaderView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		AA7E09F126F8FA8E00106DC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA7E09F226F9031600106DC2 /* UIView+addSubViews.swift */,
+				AA7E09FE26F9125900106DC2 /* UITableView+Reusable.swift */,
+				AA7E0A0226F92AAB00106DC2 /* String+ExtractFirstIndexString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA7E09F426F90D4400106DC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA7E09F726F90DA000106DC2 /* People.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA7E09F526F90D4700106DC2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AA7E09F926F90E4500106DC2 /* PeopleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AA7E09FB26F910F600106DC2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Commponent;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +256,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7E09FF26F9125900106DC2 /* UITableView+Reusable.swift in Sources */,
 				AA7E09CD26F8E50700106DC2 /* PhoneListViewController.swift in Sources */,
+				AA7E0A0326F92AAB00106DC2 /* String+ExtractFirstIndexString.swift in Sources */,
 				AA7E09C926F8E50700106DC2 /* AppDelegate.swift in Sources */,
+				AA7E09F326F9031600106DC2 /* UIView+addSubViews.swift in Sources */,
 				AA7E09CB26F8E50700106DC2 /* SceneDelegate.swift in Sources */,
+				AA7E09FA26F90E4500106DC2 /* PeopleViewModel.swift in Sources */,
+				AA7E09F826F90DA000106DC2 /* People.swift in Sources */,
+				AA7E0A0526F9352600106DC2 /* MyCardHeaderView.swift in Sources */,
 				AA7E09D326F8E50700106DC2 /* phoneBook.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
