@@ -9,8 +9,8 @@ import Foundation
 
 struct People {
     
-    let firstName: String
     let lastName: String
+    let firstName: String
     let phoneNumber: Int
     
 }

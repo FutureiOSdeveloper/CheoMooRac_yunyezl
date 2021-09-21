@@ -12,42 +12,30 @@ class PeopleViewModel {
     // MARK: - Properties
     
     let peopleList: [People] = [
-        People(firstName: "윤", lastName: "예지", phoneNumber: 01026837507),
-        People(firstName: "김", lastName: "혜수", phoneNumber: 01012345678),
-        People(firstName: "김", lastName: "루희", phoneNumber: 01012345678),
-        People(firstName: "김", lastName: "윤서", phoneNumber: 01012345678),
-        People(firstName: "", lastName: "리안", phoneNumber: 01012345678),
-        People(firstName: "", lastName: "모니카", phoneNumber: 01012345678),
-        People(firstName: "", lastName: "시미즈", phoneNumber: 01012345678),
-        People(firstName: "", lastName: "립제이", phoneNumber: 01012345678),
-        People(firstName: "Grande", lastName: "Ariana", phoneNumber: 01012345678),
-        People(firstName: "Swift", lastName: "Taylor", phoneNumber: 01012345678)
+        People(lastName: "윤", firstName: "예지", phoneNumber: 01026837507),
+        People(lastName: "김", firstName: "혜수", phoneNumber: 01012345678),
+        People(lastName: "김", firstName: "루희", phoneNumber: 01012345678),
+        People(lastName: "김", firstName: "윤서", phoneNumber: 01012345678),
+        People(lastName: "리안", firstName: "", phoneNumber: 01012345678),
+        People(lastName: "", firstName: "모니카", phoneNumber: 01012345678),
+        People(lastName: "시", firstName: "미즈", phoneNumber: 01012345678),
+        People(lastName: "", firstName: "립제이", phoneNumber: 01012345678),
+        People(lastName: "Ariana", firstName: "Grande", phoneNumber: 01012345678),
+        People(lastName: "Swift", firstName: "Taylor", phoneNumber: 01012345678)
     ]
     
-    var sortedPeopleList: [People] {
-        return peopleList.sorted {
-            return $0.firstName < $1.firstName
-        }
+    var fullNameList: [String] {
+        return peopleList.map { $0.lastName + $0.firstName }.sorted()
     }
     
     var numOfPeopleList: Int {
         return peopleList.count
     }
     
-    var userNameList: [String] {
-        return peopleList.map {
-            if !$0.firstName.isEmpty {
-                return $0.firstName
-            } else {
-                return $0.lastName
-            }
-        }
-    }
-    
     var sectionHeaderList: [String] {
         var sectionHeaderList: [String] = []
         
-        generateFirstStringList(list: userNameList).forEach {
+        generateFirstStringList(list: fullNameList).forEach {
             sectionHeaderList.append(String($0).firstIndexString)
         }
         
