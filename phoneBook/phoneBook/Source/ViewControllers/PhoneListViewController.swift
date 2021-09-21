@@ -20,7 +20,7 @@ class PhoneListViewController: UIViewController {
     // MARK: - Properties
     
     let peopleViewModel = PeopleViewModel()
-    var allSectionHeader: [String] = []
+    var allSectionHeaderList = [String]()
     
     // MARK: - View Life Cycle
     
@@ -31,6 +31,7 @@ class PhoneListViewController: UIViewController {
         initNavigationBarButtonItem()
         setTableView()
         setUpLayout()
+        generateAllSectionList()
     }
     
     // MARK: - Custom Method
@@ -63,7 +64,16 @@ class PhoneListViewController: UIViewController {
             $0.edges.equalToSuperview()
         }
     }
-    
+        
+    private func generateAllSectionList() { /// section index title UI 표시 용도
+        let tempSectionHeader = ["ㄱ", "ㄴ", "ㄷ", "ㄹ", "ㅁ", "ㅂ", "ㅅ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅍ", "ㅌ", "ㅎ"]
+        for index in 0..<tempSectionHeader.count {
+            allSectionHeaderList.append(tempSectionHeader[index].precomposedStringWithCompatibilityMapping)
+        }
+        for dec in 65...90 {
+            allSectionHeaderList.append(String(UnicodeScalar(dec)!))
+        }
+    }
 }
 
 // MARK: - UITableViewDelegate
@@ -76,8 +86,12 @@ extension PhoneListViewController: UITableViewDelegate {
 
 extension PhoneListViewController: UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+        return peopleViewModel.sectionHeaderList.firstIndex(of: title) ?? 0
+    }
+
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return peopleViewModel.sectionHeaderList
+        return allSectionHeaderList
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

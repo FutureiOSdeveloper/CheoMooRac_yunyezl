@@ -21,7 +21,17 @@ class PeopleViewModel {
         People(lastName: "시", firstName: "미즈", phoneNumber: 01012345678),
         People(lastName: "", firstName: "립제이", phoneNumber: 01012345678),
         People(lastName: "Ariana", firstName: "Grande", phoneNumber: 01012345678),
-        People(lastName: "Swift", firstName: "Taylor", phoneNumber: 01012345678)
+        People(lastName: "Swift", firstName: "Taylor", phoneNumber: 01012345678),
+        People(lastName: "", firstName: "엠마", phoneNumber: 01012345678),
+        People(lastName: "", firstName: "효진초이", phoneNumber: 01012345678),
+        People(lastName: "선", firstName: "호민", phoneNumber: 01012345678),
+        People(lastName: "곽", firstName: "민재", phoneNumber: 01012345678),
+        People(lastName: "이", firstName: "코코", phoneNumber: 01012345678),
+        People(lastName: "리", firstName: "헤이", phoneNumber: 01012345678),
+        People(lastName: "", firstName: "허니제이", phoneNumber: 01012345678),
+        People(lastName: "", firstName: "케이데이", phoneNumber: 01012345678),
+        People(lastName: "", firstName: "아이키", phoneNumber: 01012345678),
+        People(lastName: "", firstName: "가비", phoneNumber: 01012345678)
     ]
     
     var fullNameList: [String] {
