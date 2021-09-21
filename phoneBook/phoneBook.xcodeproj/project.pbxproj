@@ -21,7 +21,6 @@
 		AA7E09FA26F90E4500106DC2 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E09F926F90E4500106DC2 /* PeopleViewModel.swift */; };
 		AA7E09FF26F9125900106DC2 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E09FE26F9125900106DC2 /* UITableView+Reusable.swift */; };
 		AA7E0A0326F92AAB00106DC2 /* String+ExtractFirstIndexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E0A0226F92AAB00106DC2 /* String+ExtractFirstIndexString.swift */; };
-		AA7E0A0526F9352600106DC2 /* MyCardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E0A0426F9352600106DC2 /* MyCardHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		AA7E09F926F90E4500106DC2 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		AA7E09FE26F9125900106DC2 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		AA7E0A0226F92AAB00106DC2 /* String+ExtractFirstIndexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtractFirstIndexString.swift"; sourceTree = "<group>"; };
-		AA7E0A0426F9352600106DC2 /* MyCardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +116,6 @@
 		AA7E09EA26F8ECBA00106DC2 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				AA7E0A0426F9352600106DC2 /* MyCardHeaderView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -264,7 +261,6 @@
 				AA7E09CB26F8E50700106DC2 /* SceneDelegate.swift in Sources */,
 				AA7E09FA26F90E4500106DC2 /* PeopleViewModel.swift in Sources */,
 				AA7E09F826F90DA000106DC2 /* People.swift in Sources */,
-				AA7E0A0526F9352600106DC2 /* MyCardHeaderView.swift in Sources */,
 				AA7E09D326F8E50700106DC2 /* phoneBook.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

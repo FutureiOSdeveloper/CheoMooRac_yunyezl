@@ -10,7 +10,7 @@ import Foundation
 extension String {
     
     var firstIndexString: String {
-        return self.decomposedStringWithCanonicalMapping.unicodeScalars.map { String($0) }[0]
+        return self.decomposedStringWithCompatibilityMapping.unicodeScalars.map { String($0) }[0]
     }
     
 }
