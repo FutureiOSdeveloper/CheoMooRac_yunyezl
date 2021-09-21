@@ -16,7 +16,6 @@ class PhoneListViewController: UIViewController {
     
     private let searchController = UISearchController(searchResultsController: nil)
     private let phoneListTableView = UITableView()
-    private let myCardHeaderView = MyCardHeaderView()
     
     // MARK: - Properties
     
@@ -58,7 +57,7 @@ class PhoneListViewController: UIViewController {
     }
     
     private func setUpLayout() {
-        view.addSubviews(phoneListTableView, myCardHeaderView)
+        view.addSubviews(phoneListTableView)
         
         phoneListTableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
@@ -96,20 +95,15 @@ extension PhoneListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
 
-        cell.textLabel?.text = sectionArray(at: indexPath.section)[indexPath.row].firstName
-                                + sectionArray(at: indexPath.section)[indexPath.row].lastName
+        cell.textLabel?.text = sectionArray(at: indexPath.section)[indexPath.row]
         cell.selectionStyle = .none
 
         return cell
     }
 
-    func sectionArray(at section: Int) -> [People] {
-        return peopleViewModel.sortedPeopleList.filter {
-            if $0.firstName.isEmpty {
-                return $0.lastName.firstIndexString == peopleViewModel.sectionHeaderList[section]
-            } else {
-                return $0.firstName.firstIndexString == peopleViewModel.sectionHeaderList[section]
-            }
+    func sectionArray(at section: Int) -> [String] {
+        return peopleViewModel.fullNameList.filter {
+            return $0.firstIndexString == peopleViewModel.sectionHeaderList[section]
         }
     }
 
