@@ -49,7 +49,7 @@ class PeopleViewModel {
             sectionHeaderList.append(String($0).firstIndexString)
         }
         
-        return Array(Set(sectionHeaderList)).sorted()
+        return makeHangulFirst(with: Array(Set(sectionHeaderList)).sorted())
     }
     
     // MARK: - Fucntions
@@ -66,6 +66,21 @@ class PeopleViewModel {
         }
         
         return startIndexStringList
+    }
+    
+    private func makeHangulFirst(with headerList: [String]) -> [String] {
+        var letterSectionList: [String] = []
+        var hangulSectionList: [String] = []
+        
+        headerList.forEach {
+            if $0.isAlpha() {
+                letterSectionList.append($0)
+            } else {
+                hangulSectionList.append($0)
+            }
+        }
+        
+        return hangulSectionList + letterSectionList
     }
     
 }
