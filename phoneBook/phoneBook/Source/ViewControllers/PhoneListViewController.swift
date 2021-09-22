@@ -80,6 +80,13 @@ class PhoneListViewController: UIViewController {
 
 extension PhoneListViewController: UITableViewDelegate {
    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        
+        let detailViewController = DetailViewController()
+        navigationController?.pushViewController(detailViewController, animated: true)
+    }
+    
 }
 
 // MARK: - UITableViewDataSource
@@ -110,7 +117,6 @@ extension PhoneListViewController: UITableViewDataSource {
         let cell = UITableViewCell()
 
         cell.textLabel?.text = sectionArray(at: indexPath.section)[indexPath.row]
-        cell.selectionStyle = .none
 
         return cell
     }
