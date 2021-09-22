@@ -26,6 +26,7 @@
 		AA7E0A9D26FB618700106DC2 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E0A9C26FB618700106DC2 /* Detail.swift */; };
 		AA7E0A9F26FB6FEC00106DC2 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E0A9E26FB6FEC00106DC2 /* ButtonView.swift */; };
 		AA7E0AA126FBA4D400106DC2 /* UIView+makeRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E0AA026FBA4D400106DC2 /* UIView+makeRounded.swift */; };
+		AA7E0AA726FBCD0E00106DC2 /* String+isAlpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E0AA626FBCD0E00106DC2 /* String+isAlpha.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		AA7E0A9C26FB618700106DC2 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		AA7E0A9E26FB6FEC00106DC2 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		AA7E0AA026FBA4D400106DC2 /* UIView+makeRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+makeRounded.swift"; sourceTree = "<group>"; };
+		AA7E0AA626FBCD0E00106DC2 /* String+isAlpha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+isAlpha.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				AA7E09FE26F9125900106DC2 /* UITableView+Reusable.swift */,
 				AA7E0A0226F92AAB00106DC2 /* String+ExtractFirstIndexString.swift */,
 				AA7E0AA026FBA4D400106DC2 /* UIView+makeRounded.swift */,
+				AA7E0AA626FBCD0E00106DC2 /* String+isAlpha.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				AA7E0A9626FB574D00106DC2 /* DetailViewController.swift in Sources */,
 				AA7E0A9F26FB6FEC00106DC2 /* ButtonView.swift in Sources */,
 				AA7E09F826F90DA000106DC2 /* People.swift in Sources */,
+				AA7E0AA726FBCD0E00106DC2 /* String+isAlpha.swift in Sources */,
 				AA7E0A9A26FB588600106DC2 /* DetailTableViewCell.swift in Sources */,
 				AA7E09D326F8E50700106DC2 /* phoneBook.xcdatamodeld in Sources */,
 			);
